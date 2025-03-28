@@ -1,49 +1,75 @@
-Project phase 1 - Definition and planning
-I am planning to work on this project, Task Manager Web App. This app will allow users to create, update, and delete tasks while categorizing them by priority or status. I will also make basic authentication and a simple, clean UI.
+Phase 1: Definition and Planning for TAPIN  
 
-User Personas
-Student (Omolola, 20 years old)
-Needs a way to organize assignments and deadlines.
-Prefers a simple interface with minimal distractions.
+1 User Personas 
+Teacher (Primary User)   
+The goal is to Create courses, track attendance, and monitor student participation.  
+Because there is difficulty tracking attendance manually, managing large classes, and ensuring accurate records.  
+   
+Student (Primary User)
+The goal is to quickly mark attendance using an NFC card, check attendance records, and avoid missing classes.  
+The reason is that students forget to sign attendance, long manual processes, and lack of instant feedback.  
+   
+Administrator (Secondary User)
+The Admin will be able to manage the system, ensure NFC device functionality, and oversee attendance reports.  
+At the end Admin will be Handling technical issues and maintaining security.  
 
-Freelancer (Ibukun, 30 years old)
-Manages multiple projects and wants a structured task list.
-Needs task prioritization and status updates.
-Small Business Owner (Wasilat, 30 years old)
-Tracks business-related tasks and deadlines.
-Prefers mobile accessibility.
+2 Use Cases and Usage Scenarios
+Use Case 1: Teacher Creates a Course and Session
+  Teacher  
+  Steps:
+    1. Logs into TAPIN.  
+    2. Creates a new course with a name, schedule, and session details.  
+    3. Saves course, which becomes available for students.  
 
-Use Cases and User Flows
-Use Case 1: Task Creation
-The user logs in.
-Clicks “Add Task” and enters a title, description, and deadline.
-Assigns a priority level (Low, Medium, High).
-Saves the task.
+Use Case 2: Student Marks Attendance 
+   Student  
+  Steps:  
+    1. Taps NFC card on the device.  
+    2. TAPIN verifies identity and records the timestamp.  
+    3. Attendance status updates in real time.  
 
-Use Case 2: Task Management
-Users can mark tasks as complete or update details.
-Users can delete tasks they no longer need.
+Use Case 3: Teacher Views Attendance Records 
+   Teacher  
+  Steps:  
+    1. Logs into TAPIN.  
+    2. Selects a course and views attendance history.  
+    3. Downloads attendance reports if needed.  
 
-Use Case 3: User Authentication
-Users sign up and log in using a simple authentication system.
-Logged-in users can view their task list.
+Use Case 4: Administrator Manages System
+  Actor: Administrator  
+  Steps: 
+    1. Logs in with admin privileges.  
+    2. Adds or removes courses, teachers, or students.  
+    3. Troubleshoots any system issues.  
 
- UI Prototypes
-I will design a wireframe showing:
+3 UI Prototypes 
+Teacher Dashboard: Course creation form, session scheduling, attendance reports.  
+Student Dashboard: Attendance status, past attendance records.  
+NFC Attendance Page: Simple confirmation screen after tap-in.  
+Admin Panel: User management, system logs, and troubleshooting tools.  
 
-A simple homepage with a login/register option.
- A dashboard displaying tasks in a list format with buttons for “Edit” and “Delete.”
- A task creation form with fields for task title, description, and deadline.
+4 Information Architecture and Technical Design 
+Frontend: React with Bootstrap for UI.  
+Backend: Node.js with Express.js for API endpoints.  
+Database: MongoDB (NoSQL) or PostgreSQL (SQL) for storing attendance records.  
+NFC Integration: JavaScript-based API for handling NFC card reads.  
+Authentication: JWT-based login system.  
+Deployment: Hosted on a cloud service (e.g., Vercel, Firebase, or AWS).  
 
-Information Architecture and Technical Design
- 
- Frontend: HTML, CSS, JavaScript (React)
- Backend: Node.js with Express
- Database: MongoDB (or Firebase for simplicity)
- Authentication: Firebase Auth
- Hosting: Netlify for frontend, Render/Heroku for backend.
+5 Project Management and User Testing
+Development Methodology: Agile (Scrum)  
+Project Timeline:
+  Phase 1: Planning (2 weeks)  
+  Phase 2: Backend & Database Setup (3 weeks)  
+  Phase 3: Frontend Development (3 weeks)  
+  Phase 4: NFC Integration & Testing (2 weeks)  
+  Phase 5: Deployment & Final Testing (2 weeks)  
 
-Project Management and User Testing
+User Testing Plan: 
+  Unit Testing: Each feature tested individually.  
+  Integration Testing: Testing NFC with the database.  
+  Beta Testing: Selected teachers and students provide feedback.  
+  Final Release: After improvements based on feedback.  
  
  Development Timeline:
  Week 1: Set up project structure and UI design.
