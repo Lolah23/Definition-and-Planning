@@ -51,6 +51,8 @@
 ---
 
 ### 3. UI Prototypes
+![I made a pen and paper prototype just to show you how the interface will look, and I will also make use of figma to design for the final result](c:\Users\omolo\OneDrive\Documents\Downloads\WhatsApp Image 2025-03-28 at 14.25.38.jpeg)
+
 - **Teacher Dashboard:** Course creation form, session scheduling, attendance reports.  
 - **Student Dashboard:** Attendance status, past attendance records.  
 - **NFC Attendance Page:** Simple confirmation screen after tap-in.  
