@@ -51,7 +51,7 @@
 ---
 
 ### 3. UI Prototypes
-![I made a pen and paper prototype just to show you how the interface will look, and I will also make use of figma to design for the final result](c:\Users\omolo\OneDrive\Documents\Downloads\WhatsApp Image 2025-03-28 at 14.25.38.jpeg)
+![I made a pen and paper prototype just to show you how the interface will look, and I will also make use of figma to design for the final result][View Image](file:///c:/Users/omolo/OneDrive/Documents/Downloads/WhatsApp%20Image%202025-03-28%20at%2014.25.38.jpeg)
 
 - **Teacher Dashboard:** Course creation form, session scheduling, attendance reports.  
 - **Student Dashboard:** Attendance status, past attendance records.  
