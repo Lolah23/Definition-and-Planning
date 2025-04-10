@@ -43,37 +43,114 @@
 - Inline comments are present to explain logic in modules
 - ESLint enforces code style; Prettier used for consistent formatting
 
-**Example:**
+Below are some screenshots showcasing the API endpoints and functionalities.
 
-```js
-// POST /api/attendance
-// Records student NFC tap-in
-app.post("/api/attendance", async (req, res) => {
-  const { studentId, sessionId, timestamp } = req.body;
-  // Save record to DB
-  ...
-});
-Testing and Error Handling – Grade 5
-Unit Testing: Jest for backend logic
+### Endpoints Screenshot 1
+<img src="StuAttendanceAPI/StuAttendanceAPI.WebApi/Documentation/endpointsscreenshot.jpg" alt="Endpoints Screenshot 1"/>
 
-Frontend Testing: React Testing Library
+### Endpoints Screenshot 2
+<img src="StuAttendanceAPI/StuAttendanceAPI.WebApi/Documentation/endpointsscreenshot2.jpg" alt="Endpoints Screenshot 2"/>
 
-Error Handling:
+### Endpoints Screenshot 3
+<img src="StuAttendanceAPI/StuAttendanceAPI.WebApi/Documentation/endpointsscreenshot3.jpg" alt="Endpoints Screenshot 3"/>
 
-React error boundaries
+## API Endpoints
 
-Backend checks for invalid data, NFC mismatches, unauthorized access
-Code here
-if (!studentId || !sessionId) {
-  return res.status(400).json({ error: "Missing required data" });
-}
-User Interface and Interaction – Grade 5
-Teacher dashboard includes side navigation, modals, and success toasts
+Below are the detailed API endpoints available in the StuAttendanceAPI.
 
-Student view is mobile-responsive for NFC tap-in
+### Students
 
-Sample UI Components:
+- **GET** `/students`  
+  Retrieve all students.
 
-CourseID.jsx – Displays course info
+- **GET** `/students/{id}`  
+  Retrieve a student by ID.
 
-AttendanceTable.jsx – Paginated list of attendance logs
+  - **POST** `/students`  
+  Create a new student.
+
+- **PUT** `/students/{id}`  
+  Update an existing student.
+
+- **DELETE** `/students/{id}`  
+  Delete a student.
+
+### Attendance
+
+- **GET** `/attendance`  
+  Retrieve all attendance records.
+
+  - **GET** `/attendance/{id}`  
+  Retrieve an attendance record by ID.
+
+- **GET** `/attendance/student/{studentId}`  
+  Retrieve attendance records for a specific student.
+
+- **POST** `/attendance`  
+  Create a new attendance record.
+
+- **PUT** `/attendance/{id}`  
+  Update an existing attendance record.
+
+- **DELETE** `/attendance/{id}`
+
+  ### Course
+
+- **GET** `/api/Course`  
+  Retrieve all courses.
+
+- **GET** `/api/Course/{id}`  
+  Retrieve a course by ID.
+
+- **POST** `/api/Course`  
+  Create a new course.
+
+- **PUT** `/api/Course/{id}`  
+  Update an existing course.
+
+  - **DELETE** `/api/Course/{id}`  
+  Delete a course.
+
+- **GET** `/api/Course/GetCoursesByStudentId/{studentId}`  
+  Retrieve courses by student ID.
+
+### Session
+
+- **GET** `/api/Session`  
+  Retrieve all sessions.
+
+- **GET** `/api/Session/{id}`  
+  Retrieve a session by ID.
+- **POST** `/api/Session`  
+  Create a new session.
+
+- **PUT** `/api/Session/{id}`  
+  Update an existing session.
+
+- **DELETE** `/api/Session/{id}`  
+  Delete a session.
+
+- **GET** `/api/Session/GetSessionsByCourseId/{courseId}`  
+  Retrieve sessions by course ID.
+
+  ### User
+
+- **GET** `/api/User`  
+  Retrieve all users.
+
+- **GET** `/api/User/{id}`  
+  Retrieve a user by ID.
+
+- **POST** `/api/User`  
+  Create a new user.
+
+- **PUT** `/api/User/{id}`  
+  Update an existing user.
+
+  - **DELETE** `/api/User/{id}`  
+  Delete a user.
+
+- **POST** `/api/User/Login`  
+  User login.
+
+     
